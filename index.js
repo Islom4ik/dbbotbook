@@ -164,7 +164,7 @@ bot.action('b2', async (ctx) => {
         if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b13Request = new Date().valueOf();
 
-        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
+        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username}) `);
         ctx.session.b14Request = new Date().valueOf();
 
         if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
