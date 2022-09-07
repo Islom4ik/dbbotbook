@@ -28,7 +28,7 @@ bot.launch();
 
 bot.command('books', async (ctx) => {
     try {
-        if (ctx.session?.booksRequest> (new Date().valueOf() - 5 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить список можно через 5 минут");
+        if (ctx.session?.booksRequest> (new Date().valueOf() - 5 * 60 * 1000)) return await ctx.reply("⚠ Повторно запросить список можно через 5 минут");
         ctx.session.booksRequest = new Date().valueOf();
 
         await ctx.replyWithHTML('<b>1. Литература 1 часть \n2. Литература 2 часть \n3. Алгебра \n4. Геометрия \n5. Биология \n6. Черчение \n7. Физика \n8. Информатика(учебник) \n9. Информатика(методика) \n10. Воспитание \n11. Экономика \n12. География \n13. Всемирная История \n14. Химия \n15. ОКП(Основы Конституционного Права) \n16. ИНН(Идея Национальной Независимости) \n17. Узбекский Язык \n18. История Узбекистана \n19. Русский Язык \n20. Технология</b>', Markup.inlineKeyboard(
