@@ -28,7 +28,7 @@ bot.launch();
 
 bot.command('books', async (ctx) => {
     try {
-        if (ctx.session?.booksRequest> (new Date().valueOf() - 5 * 60 * 1000)) return await ctx.reply("⚠ Повторно запросить список можно через 5 минут");
+        if (ctx.session?.booksRequest> (new Date().valueOf() - 5 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить список можно через 5 минут (@${ctx.message.from.username})`);
         ctx.session.booksRequest = new Date().valueOf();
 
         await ctx.replyWithHTML('<b>1. Литература 1 часть \n2. Литература 2 часть \n3. Алгебра \n4. Геометрия \n5. Биология \n6. Черчение \n7. Физика \n8. Информатика(учебник) \n9. Информатика(методика) \n10. Воспитание \n11. Экономика \n12. География \n13. Всемирная История \n14. Химия \n15. ОКП(Основы Конституционного Права) \n16. ИНН(Идея Национальной Независимости) \n17. Узбекский Язык \n18. История Узбекистана \n19. Русский Язык \n20. Технология</b>', Markup.inlineKeyboard(
@@ -50,64 +50,64 @@ bot.command('books', async (ctx) => {
 
 bot.action('b1', async (ctx) => {
     try {
-        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут");
+        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b1Request = new Date().valueOf();
         /* main */
-        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут");
+        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b2Request = new Date().valueOf();
 
-        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут");
+        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b3Request = new Date().valueOf();
         
-        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут");
+        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b4Request = new Date().valueOf();
 
-        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут");
+        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b5Request = new Date().valueOf();
 
-        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут");
+        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b6Request = new Date().valueOf();
 
-        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут");
+        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b7Request = new Date().valueOf();
 
-        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут");
+        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b8Request = new Date().valueOf();
 
-        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут");
+        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b9Request = new Date().valueOf();
 
-        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут");
+        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b10Request = new Date().valueOf();
 
-        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b11Request = new Date().valueOf();
 
-        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b12Request = new Date().valueOf();
 
-        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b13Request = new Date().valueOf();
 
-        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b14Request = new Date().valueOf();
 
-        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b15Request = new Date().valueOf();
 
-        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b16Request = new Date().valueOf();
 
-        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b17Request = new Date().valueOf();
 
-        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b18Request = new Date().valueOf();
 
-        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b19Request = new Date().valueOf();
 
-        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b20Request = new Date().valueOf();
 
 
@@ -125,64 +125,64 @@ bot.action('b1', async (ctx) => {
 
 bot.action('b2', async (ctx) => {
     try {
-        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b2Request = new Date().valueOf();
         /* main */
-        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b1Request = new Date().valueOf();
 
-        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b3Request = new Date().valueOf();
         
-        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b4Request = new Date().valueOf();
 
-        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b5Request = new Date().valueOf();
 
-        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b6Request = new Date().valueOf();
 
-        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b7Request = new Date().valueOf();
 
-        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b8Request = new Date().valueOf();
 
-        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b9Request = new Date().valueOf();
 
-        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b10Request = new Date().valueOf();
 
-        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b11Request = new Date().valueOf();
 
-        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b12Request = new Date().valueOf();
 
-        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b13Request = new Date().valueOf();
 
-        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b14Request = new Date().valueOf();
 
-        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b15Request = new Date().valueOf();
 
-        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b16Request = new Date().valueOf();
 
-        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b17Request = new Date().valueOf();
 
-        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b18Request = new Date().valueOf();
 
-        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b19Request = new Date().valueOf();
 
-        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b20Request = new Date().valueOf();
 
         
@@ -200,64 +200,64 @@ bot.action('b2', async (ctx) => {
 
 bot.action('b3', async (ctx) => {
     try {
-        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b3Request = new Date().valueOf();
         /* main */
-        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b1Request = new Date().valueOf();
 
-        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b2Request = new Date().valueOf();
         
-        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b4Request = new Date().valueOf();
 
-        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b5Request = new Date().valueOf();
 
-        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b6Request = new Date().valueOf();
 
-        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b7Request = new Date().valueOf();
 
-        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b8Request = new Date().valueOf();
 
-        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b9Request = new Date().valueOf();
 
-        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b10Request = new Date().valueOf();
 
-        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b11Request = new Date().valueOf();
 
-        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b12Request = new Date().valueOf();
 
-        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b13Request = new Date().valueOf();
 
-        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b14Request = new Date().valueOf();
 
-        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b15Request = new Date().valueOf();
 
-        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b16Request = new Date().valueOf();
 
-        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b17Request = new Date().valueOf();
 
-        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b18Request = new Date().valueOf();
 
-        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b19Request = new Date().valueOf();
 
-        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b20Request = new Date().valueOf();
 
 
@@ -275,64 +275,64 @@ bot.action('b3', async (ctx) => {
 
 bot.action('b4', async (ctx) => {
     try {
-        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b4Request = new Date().valueOf();
         /* main */
-        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b1Request = new Date().valueOf();
 
-        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b2Request = new Date().valueOf();
         
-        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b3Request = new Date().valueOf();
 
-        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b5Request = new Date().valueOf();
 
-        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b6Request = new Date().valueOf();
 
-        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b7Request = new Date().valueOf();
 
-        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b8Request = new Date().valueOf();
 
-        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b9Request = new Date().valueOf();
 
-        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b10Request = new Date().valueOf();
 
-        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b11Request = new Date().valueOf();
 
-        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b12Request = new Date().valueOf();
 
-        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b13Request = new Date().valueOf();
 
-        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b14Request = new Date().valueOf();
 
-        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b15Request = new Date().valueOf();
 
-        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b16Request = new Date().valueOf();
 
-        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b17Request = new Date().valueOf();
 
-        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b18Request = new Date().valueOf();
 
-        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b19Request = new Date().valueOf();
 
-        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b20Request = new Date().valueOf();
 
 
@@ -351,64 +351,64 @@ bot.action('b4', async (ctx) => {
 
 bot.action('b5', async (ctx) => {
     try {
-        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b5Request = new Date().valueOf();
         /* main */
-        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b1Request = new Date().valueOf();
 
-        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b2Request = new Date().valueOf();
         
-        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b3Request = new Date().valueOf();
 
-        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b4Request = new Date().valueOf();
 
-        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b6Request = new Date().valueOf();
 
-        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b7Request = new Date().valueOf();
 
-        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b8Request = new Date().valueOf();
 
-        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b9Request = new Date().valueOf();
 
-        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b10Request = new Date().valueOf();
 
-        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b11Request = new Date().valueOf();
 
-        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b12Request = new Date().valueOf();
 
-        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b13Request = new Date().valueOf();
 
-        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b14Request = new Date().valueOf();
 
-        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b15Request = new Date().valueOf();
 
-        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b16Request = new Date().valueOf();
 
-        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b17Request = new Date().valueOf();
 
-        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b18Request = new Date().valueOf();
 
-        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b19Request = new Date().valueOf();
 
-        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b20Request = new Date().valueOf();
 
 
@@ -426,64 +426,64 @@ bot.action('b5', async (ctx) => {
 
 bot.action('b6', async (ctx) => {
     try {
-        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b6Request = new Date().valueOf();
         /* main */
-        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b1Request = new Date().valueOf();
 
-        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b2Request = new Date().valueOf();
         
-        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b3Request = new Date().valueOf();
 
-        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b4Request = new Date().valueOf();
 
-        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b5Request = new Date().valueOf();
 
-        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b7Request = new Date().valueOf();
 
-        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b8Request = new Date().valueOf();
 
-        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b9Request = new Date().valueOf();
 
-        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b10Request = new Date().valueOf();
 
-        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b11Request = new Date().valueOf();
 
-        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b12Request = new Date().valueOf();
 
-        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b13Request = new Date().valueOf();
 
-        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b14Request = new Date().valueOf();
 
-        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b15Request = new Date().valueOf();
 
-        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b16Request = new Date().valueOf();
 
-        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b17Request = new Date().valueOf();
 
-        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b18Request = new Date().valueOf();
 
-        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b19Request = new Date().valueOf();
 
-        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b20Request = new Date().valueOf();
 
 
@@ -501,64 +501,64 @@ bot.action('b6', async (ctx) => {
 
 bot.action('b7', async (ctx) => {
     try {
-        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b7Request = new Date().valueOf();
         /* main */
-        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b1Request = new Date().valueOf();
 
-        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b2Request = new Date().valueOf();
         
-        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b3Request = new Date().valueOf();
 
-        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b4Request = new Date().valueOf();
 
-        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b5Request = new Date().valueOf();
 
-        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b6Request = new Date().valueOf();
 
-        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b8Request = new Date().valueOf();
 
-        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b9Request = new Date().valueOf();
 
-        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b10Request = new Date().valueOf();
 
-        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b11Request = new Date().valueOf();
 
-        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b12Request = new Date().valueOf();
 
-        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b13Request = new Date().valueOf();
 
-        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b14Request = new Date().valueOf();
 
-        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b15Request = new Date().valueOf();
 
-        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b16Request = new Date().valueOf();
 
-        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b17Request = new Date().valueOf();
 
-        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b18Request = new Date().valueOf();
 
-        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b19Request = new Date().valueOf();
 
-        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b20Request = new Date().valueOf();
 
 
@@ -577,64 +577,64 @@ bot.action('b7', async (ctx) => {
 
 bot.action('b8', async (ctx) => {
     try {
-        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b8Request = new Date().valueOf();
         /* main */
-        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b1Request = new Date().valueOf();
 
-        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b2Request = new Date().valueOf();
         
-        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b3Request = new Date().valueOf();
 
-        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b4Request = new Date().valueOf();
 
-        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b5Request = new Date().valueOf();
 
-        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b6Request = new Date().valueOf();
 
-        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b7Request = new Date().valueOf();
 
-        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b9Request = new Date().valueOf();
 
-        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b10Request = new Date().valueOf();
 
-        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b11Request = new Date().valueOf();
 
-        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b12Request = new Date().valueOf();
 
-        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b13Request = new Date().valueOf();
 
-        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b14Request = new Date().valueOf();
 
-        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b15Request = new Date().valueOf();
 
-        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b16Request = new Date().valueOf();
 
-        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b17Request = new Date().valueOf();
 
-        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b18Request = new Date().valueOf();
 
-        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b19Request = new Date().valueOf();
 
-        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b20Request = new Date().valueOf();
 
 
@@ -652,64 +652,64 @@ bot.action('b8', async (ctx) => {
 
 bot.action('b9', async (ctx) => {
     try {
-        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b9Request = new Date().valueOf();
         /* main */
-        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b1Request = new Date().valueOf();
 
-        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b2Request = new Date().valueOf();
         
-        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b3Request = new Date().valueOf();
 
-        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b4Request = new Date().valueOf();
 
-        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b5Request = new Date().valueOf();
 
-        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b6Request = new Date().valueOf();
 
-        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b7Request = new Date().valueOf();
 
-        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b8Request = new Date().valueOf();
 
-        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b10Request = new Date().valueOf();
 
-        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b11Request = new Date().valueOf();
 
-        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b12Request = new Date().valueOf();
 
-        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b13Request = new Date().valueOf();
 
-        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b14Request = new Date().valueOf();
 
-        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b15Request = new Date().valueOf();
 
-        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b16Request = new Date().valueOf();
 
-        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b17Request = new Date().valueOf();
 
-        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b18Request = new Date().valueOf();
 
-        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b19Request = new Date().valueOf();
 
-        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b20Request = new Date().valueOf();
 
         
@@ -727,64 +727,64 @@ bot.action('b9', async (ctx) => {
 
 bot.action('b10', async (ctx) => {
     try {
-        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b10Request = new Date().valueOf();
         /* main */
-        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b1Request = new Date().valueOf();
 
-        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b2Request = new Date().valueOf();
         
-        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b3Request = new Date().valueOf();
 
-        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b4Request = new Date().valueOf();
 
-        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b5Request = new Date().valueOf();
 
-        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b6Request = new Date().valueOf();
 
-        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b7Request = new Date().valueOf();
 
-        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b8Request = new Date().valueOf();
 
-        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b9Request = new Date().valueOf();
 
-        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b11Request = new Date().valueOf();
 
-        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b12Request = new Date().valueOf();
 
-        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b13Request = new Date().valueOf();
 
-        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b14Request = new Date().valueOf();
 
-        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b15Request = new Date().valueOf();
 
-        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b16Request = new Date().valueOf();
 
-        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b17Request = new Date().valueOf();
 
-        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b18Request = new Date().valueOf();
 
-        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b19Request = new Date().valueOf();
 
-        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b20Request = new Date().valueOf();
 
 
@@ -803,64 +803,64 @@ bot.action('b10', async (ctx) => {
 
 bot.action('b11', async (ctx) => {
     try {
-        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b11Request = new Date().valueOf();
         /* main */
-        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b1Request = new Date().valueOf();
 
-        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b2Request = new Date().valueOf();
         
-        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b3Request = new Date().valueOf();
 
-        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b4Request = new Date().valueOf();
 
-        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b5Request = new Date().valueOf();
 
-        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b6Request = new Date().valueOf();
 
-        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b7Request = new Date().valueOf();
 
-        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b8Request = new Date().valueOf();
 
-        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b9Request = new Date().valueOf();
 
-        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b10Request = new Date().valueOf();
 
-        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b12Request = new Date().valueOf();
 
-        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b13Request = new Date().valueOf();
 
-        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b14Request = new Date().valueOf();
 
-        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b15Request = new Date().valueOf();
 
-        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b16Request = new Date().valueOf();
 
-        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b17Request = new Date().valueOf();
 
-        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b18Request = new Date().valueOf();
 
-        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b19Request = new Date().valueOf();
 
-        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b20Request = new Date().valueOf();
 
 
@@ -879,64 +879,64 @@ bot.action('b11', async (ctx) => {
 
 bot.action('b12', async (ctx) => {
     try {
-        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b12Request = new Date().valueOf();
         /* main */
-        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b1Request = new Date().valueOf();
 
-        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b2Request = new Date().valueOf();
         
-        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b3Request = new Date().valueOf();
 
-        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b4Request = new Date().valueOf();
 
-        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b5Request = new Date().valueOf();
 
-        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b6Request = new Date().valueOf();
 
-        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b7Request = new Date().valueOf();
 
-        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b8Request = new Date().valueOf();
 
-        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b9Request = new Date().valueOf();
 
-        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b10Request = new Date().valueOf();
 
-        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b11Request = new Date().valueOf();
 
-        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b13Request = new Date().valueOf();
 
-        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b14Request = new Date().valueOf();
 
-        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b15Request = new Date().valueOf();
 
-        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b16Request = new Date().valueOf();
 
-        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b17Request = new Date().valueOf();
 
-        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b18Request = new Date().valueOf();
 
-        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b19Request = new Date().valueOf();
 
-        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b20Request = new Date().valueOf();
 
 
@@ -955,64 +955,64 @@ bot.action('b12', async (ctx) => {
 
 bot.action('b13', async (ctx) => {
     try {
-        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b13Request = new Date().valueOf();
         /* main */
-        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b1Request = new Date().valueOf();
 
-        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b2Request = new Date().valueOf();
         
-        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b3Request = new Date().valueOf();
 
-        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b4Request = new Date().valueOf();
 
-        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b5Request = new Date().valueOf();
 
-        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b6Request = new Date().valueOf();
 
-        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b7Request = new Date().valueOf();
 
-        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b8Request = new Date().valueOf();
 
-        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b9Request = new Date().valueOf();
 
-        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b10Request = new Date().valueOf();
 
-        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b11Request = new Date().valueOf();
 
-        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b12Request = new Date().valueOf();
 
-        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b14Request = new Date().valueOf();
 
-        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b15Request = new Date().valueOf();
 
-        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b16Request = new Date().valueOf();
 
-        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b17Request = new Date().valueOf();
 
-        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b18Request = new Date().valueOf();
 
-        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b19Request = new Date().valueOf();
 
-        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b20Request = new Date().valueOf();
 
 
@@ -1031,64 +1031,64 @@ bot.action('b13', async (ctx) => {
 
 bot.action('b14', async (ctx) => {
     try {
-        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b14Request = new Date().valueOf();
         /* main */
-        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b1Request = new Date().valueOf();
 
-        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b2Request = new Date().valueOf();
         
-        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b3Request = new Date().valueOf();
 
-        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b4Request = new Date().valueOf();
 
-        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b5Request = new Date().valueOf();
 
-        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b6Request = new Date().valueOf();
 
-        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b7Request = new Date().valueOf();
 
-        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b8Request = new Date().valueOf();
 
-        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b9Request = new Date().valueOf();
 
-        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b10Request = new Date().valueOf();
 
-        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b11Request = new Date().valueOf();
 
-        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b12Request = new Date().valueOf();
 
-        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b13Request = new Date().valueOf();
 
-        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b15Request = new Date().valueOf();
 
-        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b16Request = new Date().valueOf();
 
-        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b17Request = new Date().valueOf();
 
-        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b18Request = new Date().valueOf();
 
-        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b19Request = new Date().valueOf();
 
-        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b20Request = new Date().valueOf();
 
 
@@ -1106,65 +1106,65 @@ bot.action('b14', async (ctx) => {
 
 bot.action('b15', async (ctx) => {
     try {
-        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b15Request = new Date().valueOf();
         /* main */
 
-        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b1Request = new Date().valueOf();
 
-        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b2Request = new Date().valueOf();
         
-        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b3Request = new Date().valueOf();
 
-        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b4Request = new Date().valueOf();
 
-        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b5Request = new Date().valueOf();
 
-        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b6Request = new Date().valueOf();
 
-        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b7Request = new Date().valueOf();
 
-        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b8Request = new Date().valueOf();
 
-        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b9Request = new Date().valueOf();
 
-        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b10Request = new Date().valueOf();
 
-        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b11Request = new Date().valueOf();
 
-        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b12Request = new Date().valueOf();
 
-        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b13Request = new Date().valueOf();
 
-        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b14Request = new Date().valueOf();
 
-        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b16Request = new Date().valueOf();
 
-        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b17Request = new Date().valueOf();
 
-        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b18Request = new Date().valueOf();
 
-        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b19Request = new Date().valueOf();
 
-        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b20Request = new Date().valueOf();
 
 
@@ -1182,64 +1182,64 @@ bot.action('b15', async (ctx) => {
 
 bot.action('b16', async (ctx) => {
     try {
-        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b4Request = new Date().valueOf();
         /* main */
-        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b1Request = new Date().valueOf();
 
-        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b2Request = new Date().valueOf();
         
-        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b3Request = new Date().valueOf();
 
-        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b4Request = new Date().valueOf();
 
-        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b5Request = new Date().valueOf();
 
-        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b6Request = new Date().valueOf();
 
-        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b7Request = new Date().valueOf();
 
-        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b8Request = new Date().valueOf();
 
-        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b9Request = new Date().valueOf();
 
-        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b10Request = new Date().valueOf();
 
-        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b11Request = new Date().valueOf();
 
-        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b12Request = new Date().valueOf();
 
-        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b13Request = new Date().valueOf();
 
-        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b14Request = new Date().valueOf();
 
-        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b15Request = new Date().valueOf();
 
-        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b17Request = new Date().valueOf();
 
-        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b18Request = new Date().valueOf();
 
-        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b19Request = new Date().valueOf();
 
-        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b20Request = new Date().valueOf();
 
 
@@ -1258,64 +1258,64 @@ bot.action('b16', async (ctx) => {
 
 bot.action('b17', async (ctx) => {
     try {
-        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b17Request = new Date().valueOf();
         /* main */
-        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b1Request = new Date().valueOf();
 
-        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b2Request = new Date().valueOf();
         
-        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b3Request = new Date().valueOf();
 
-        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b4Request = new Date().valueOf();
 
-        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b5Request = new Date().valueOf();
 
-        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b6Request = new Date().valueOf();
 
-        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b7Request = new Date().valueOf();
 
-        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b8Request = new Date().valueOf();
 
-        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b9Request = new Date().valueOf();
 
-        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b10Request = new Date().valueOf();
 
-        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b11Request = new Date().valueOf();
 
-        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b12Request = new Date().valueOf();
 
-        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b13Request = new Date().valueOf();
 
-        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b14Request = new Date().valueOf();
 
-        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b15Request = new Date().valueOf();
 
-        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b16Request = new Date().valueOf();
 
-        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b18Request = new Date().valueOf();
 
-        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b19Request = new Date().valueOf();
 
-        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b20Request = new Date().valueOf();
 
 
@@ -1334,64 +1334,64 @@ bot.action('b17', async (ctx) => {
 
 bot.action('b18', async (ctx) => {
     try {
-        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b18Request = new Date().valueOf();
         /* main */
-        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b1Request = new Date().valueOf();
 
-        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b2Request = new Date().valueOf();
         
-        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b3Request = new Date().valueOf();
 
-        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b4Request = new Date().valueOf();
 
-        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b5Request = new Date().valueOf();
 
-        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b6Request = new Date().valueOf();
 
-        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b7Request = new Date().valueOf();
 
-        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b8Request = new Date().valueOf();
 
-        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b9Request = new Date().valueOf();
 
-        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b10Request = new Date().valueOf();
 
-        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b11Request = new Date().valueOf();
 
-        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b12Request = new Date().valueOf();
 
-        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b13Request = new Date().valueOf();
 
-        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b14Request = new Date().valueOf();
 
-        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b15Request = new Date().valueOf();
 
-        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b16Request = new Date().valueOf();
 
-        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b17Request = new Date().valueOf();
 
-        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b19Request = new Date().valueOf();
 
-        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b20Request = new Date().valueOf();
 
 
@@ -1409,64 +1409,64 @@ bot.action('b18', async (ctx) => {
 
 bot.action('b19', async (ctx) => {
     try {
-        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b19Request = new Date().valueOf();
         /* main */
-        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b1Request = new Date().valueOf();
 
-        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b2Request = new Date().valueOf();
         
-        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b3Request = new Date().valueOf();
 
-        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b4Request = new Date().valueOf();
 
-        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b5Request = new Date().valueOf();
 
-        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b6Request = new Date().valueOf();
 
-        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b7Request = new Date().valueOf();
 
-        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b8Request = new Date().valueOf();
 
-        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b9Request = new Date().valueOf();
 
-        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b10Request = new Date().valueOf();
 
-        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b11Request = new Date().valueOf();
 
-        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b12Request = new Date().valueOf();
 
-        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b13Request = new Date().valueOf();
 
-        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b14Request = new Date().valueOf();
 
-        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b15Request = new Date().valueOf();
 
-        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b16Request = new Date().valueOf();
 
-        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b17Request = new Date().valueOf();
 
-        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b18Request = new Date().valueOf();
 
-        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b20Request = new Date().valueOf();
         
 
@@ -1484,64 +1484,64 @@ bot.action('b19', async (ctx) => {
 
 bot.action('b20', async (ctx) => {
     try {
-        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b20Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b20Request = new Date().valueOf();
         /* main */
-        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b1Request = new Date().valueOf();
 
-        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b2Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b2Request = new Date().valueOf();
         
-        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b3Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b3Request = new Date().valueOf();
 
-        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b4Request = new Date().valueOf();
 
-        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b5Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b5Request = new Date().valueOf();
 
-        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b6Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b6Request = new Date().valueOf();
 
-        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b7Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b7Request = new Date().valueOf();
 
-        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b8Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b8Request = new Date().valueOf();
 
-        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b9Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b9Request = new Date().valueOf();
 
-        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b10Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b10Request = new Date().valueOf();
 
-        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b11Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b11Request = new Date().valueOf();
 
-        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b12Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b12Request = new Date().valueOf();
 
-        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b13Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b13Request = new Date().valueOf();
 
-        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b14Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b14Request = new Date().valueOf();
 
-        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b15Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b15Request = new Date().valueOf();
 
-        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b16Request = new Date().valueOf();
 
-        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b17Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b17Request = new Date().valueOf();
 
-        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b18Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b18Request = new Date().valueOf();
 
-        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(" ⚠ Повторно запросить документ можно через 2 минут ");
+        if (ctx.session?.b19Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b19Request = new Date().valueOf();
 
         /* time reset */
