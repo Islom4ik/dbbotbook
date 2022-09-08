@@ -22,9 +22,9 @@ bot.use((ctx,next)=>{
     next()
 })
 
-bot.start((ctx) => ctx.reply('ru.| Скину вам любые книги 9 класса чтобы не искать их 3 часа \neng.| I will send you any books of the 9th grade so that you don’t have to look for them for 3 hours \nНапиши команду /books и я скину тебе список книг \nPowered by М.Ислом @geemNp'));
+bot.start((ctx) => ctx.reply('Бот скинет вам любые книги 9 класса чтобы не искать их 3 часа\nНапиши команду /books и я скину тебе список книг \nPowered by @geemNp'));
 bot.help((ctx) => ctx.reply('Команды бота: \n/start - запуск(перезапуск) бота \n/books - скинет список книг'));
-bot.launch();
+bot.launch(console.log('Бот готов к использованию...'));
 
 bot.command('books', async (ctx) => {
     try {
@@ -115,12 +115,12 @@ bot.action('b1', async (ctx) => {
         await ctx.reply(`‼ @${ctx.update.callback_query.from.username}, документ загружается, подождите немного...`)
         await ctx.answerCbQuery()
         await ctx.replyWithDocument({
-            source: './books/www.idum.uz__adabiyot_1qism_9_rus.pdf',
+            source: './books/Литература-1.pdf',
         })
     } catch(e) {
         console.error(e);
     }
-    await ctx.reply('Документ успешно доставлен вам!')
+    
 })
 
 bot.action('b2', async (ctx) => {
@@ -190,9 +190,9 @@ bot.action('b2', async (ctx) => {
         await ctx.reply(`‼ @${ctx.update.callback_query.from.username}, документ загружается, подождите немного...`)
         await ctx.answerCbQuery()
         await ctx.replyWithDocument({
-            source: './books/www.idum.uz__adabiyot_2qism_9_rus.pdf',
+            source: './books/Литература-2.pdf'
         })
-        await ctx.reply('Документ успешно доставлен вам!')
+        
     } catch(e) {
         console.error(e);
     }
@@ -265,9 +265,9 @@ bot.action('b3', async (ctx) => {
         await ctx.reply(`‼ @${ctx.update.callback_query.from.username}, документ загружается, подождите немного...`)
         await ctx.answerCbQuery()
         await ctx.replyWithDocument({
-            source: './books/www.idum.uz__algebra_9_rus.pdf',
+            source: './books/Алгебра.pdf',
         })
-        await ctx.reply('Документ успешно доставлен вам!')
+        
     } catch(e) {
         console.error(e);
     }
@@ -277,6 +277,7 @@ bot.action('b4', async (ctx) => {
     try {
         if (ctx.session?.b4Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b4Request = new Date().valueOf();
+
         /* main */
         if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b1Request = new Date().valueOf();
@@ -341,9 +342,9 @@ bot.action('b4', async (ctx) => {
         await ctx.reply(`‼ @${ctx.update.callback_query.from.username}, документ загружается, подождите немного...`)
         await ctx.answerCbQuery()
         await ctx.replyWithDocument({
-            source: './books/www.idum.uz__geometriya_9_rus.pdf',
+            source: './books/Геометрия.pdf',
         })
-        await ctx.reply('Документ успешно доставлен вам!')
+        
     } catch(e) {
         console.error(e);
     }
@@ -416,9 +417,9 @@ bot.action('b5', async (ctx) => {
         await ctx.reply(`‼ @${ctx.update.callback_query.from.username}, документ загружается, подождите немного...`)
         await ctx.answerCbQuery()
         await ctx.replyWithDocument({
-            source: './books/www.idum.uz__biologiya_9_rus.pdf',
+            source: './books/Биология.pdf',
         })
-        await ctx.reply('Документ успешно доставлен вам!')
+        
     } catch(e) {
         console.error(e);
     }
@@ -491,9 +492,9 @@ bot.action('b6', async (ctx) => {
         await ctx.reply(`‼ @${ctx.update.callback_query.from.username}, документ загружается, подождите немного...`)
         await ctx.answerCbQuery()
         await ctx.replyWithDocument({
-            source: './books/www.idum.uz__chizmachilik_9_rus.pdf',
+            source: './books/Черчение.pdf',
         })
-        await ctx.reply('Документ успешно доставлен вам!')
+        
     } catch(e) {
         console.error(e);
     }
@@ -567,9 +568,9 @@ bot.action('b7', async (ctx) => {
         await ctx.reply(`‼ @${ctx.update.callback_query.from.username}, документ загружается, подождите немного...`)
         await ctx.answerCbQuery()
         await ctx.replyWithDocument({
-            source: './books/www.idum.uz__fizika_9_rus.pdf',
+            source: './books/Физика.pdf',
         })
-        await ctx.reply('Документ успешно доставлен вам!')
+        
     } catch(e) {
         console.error(e);
     }
@@ -642,9 +643,9 @@ bot.action('b8', async (ctx) => {
         await ctx.reply(`‼ @${ctx.update.callback_query.from.username}, документ загружается, подождите немного...`)
         await ctx.answerCbQuery()
         await ctx.replyWithDocument({
-            source: './books/Informatika_9_rus_2020_uchebnik.pdf',
+            source: './books/Информатика(учебник).pdf',
         })
-        await ctx.reply('Документ успешно доставлен вам!')
+        
     } catch(e) {
         console.error(e);
     }
@@ -717,9 +718,9 @@ bot.action('b9', async (ctx) => {
         await ctx.reply(`‼ @${ctx.update.callback_query.from.username}, документ загружается, подождите немного...`)
         await ctx.answerCbQuery()
         await ctx.replyWithDocument({
-            source: './books/www.idum.uz__9-informatika-metodika.pdf',
+            source: './books/Информатика(методика).pdf',
         })
-        await ctx.reply('Документ успешно доставлен вам!')
+        
     } catch(e) {
         console.error(e);
     }
@@ -793,9 +794,9 @@ bot.action('b10', async (ctx) => {
         await ctx.reply(`‼ @${ctx.update.callback_query.from.username}, документ загружается, подождите немного...`)
         await ctx.answerCbQuery()
         await ctx.replyWithDocument({
-            source: './books/vospitaniye_9_rus_2020_www.idum.uz.pdf',
+            source: './books/Воспитание.pdf',
         })
-        await ctx.reply('Документ успешно доставлен вам!')
+        
     } catch(e) {
         console.error(e);
     }
@@ -869,9 +870,9 @@ bot.action('b11', async (ctx) => {
         await ctx.reply(`‼ @${ctx.update.callback_query.from.username}, документ загружается, подождите немного...`)
         await ctx.answerCbQuery()
         await ctx.replyWithDocument({
-            source: './books/iqtisodiy_bilim_asoslari_9_rus.pdf',
+            source: './books/Экономика.pdf',
         })
-        await ctx.reply('Документ успешно доставлен вам!')
+        
     } catch(e) {
         console.error(e);
     }
@@ -945,9 +946,9 @@ bot.action('b12', async (ctx) => {
         await ctx.reply(`‼ @${ctx.update.callback_query.from.username}, документ загружается, подождите немного...`)
         await ctx.answerCbQuery()
         await ctx.replyWithDocument({
-            source: './books/jahon_ijtimoiy_iqtisodiy_geografiyasi_9_rus.pdf',
+            source: './books/География.pdf',
         })
-        await ctx.reply('Документ успешно доставлен вам!')
+        
     } catch(e) {
         console.error(e);
     }
@@ -1021,9 +1022,9 @@ bot.action('b13', async (ctx) => {
         await ctx.reply(`‼ @${ctx.update.callback_query.from.username}, документ загружается, подождите немного...`)
         await ctx.answerCbQuery()
         await ctx.replyWithDocument({
-            source: './books/jahon_tarixi_9_rus.pdf',
+            source: './books/История(Всемирная).pdf',
         })
-        await ctx.reply('Документ успешно доставлен вам!')
+        
     } catch(e) {
         console.error(e);
     }
@@ -1096,9 +1097,9 @@ bot.action('b14', async (ctx) => {
         await ctx.reply(`‼ @${ctx.update.callback_query.from.username}, документ загружается, подождите немного...`)
         await ctx.answerCbQuery()
         await ctx.replyWithDocument({
-            source: './books/kimyo_9_rus.pdf',
+            source: './books/Химия.pdf',
         })
-        await ctx.reply('Документ успешно доставлен вам!')
+        
     } catch(e) {
         console.error(e);
     }
@@ -1172,9 +1173,9 @@ bot.action('b15', async (ctx) => {
         await ctx.reply(`‼ @${ctx.update.callback_query.from.username}, документ загружается, подождите немного...`)
         await ctx.answerCbQuery()
         await ctx.replyWithDocument({
-            source: './books/www.idum.uz__konstitutsiyaviy_huquq_asoslari_9_rus.pdf',
+            source: './books/ОКП.pdf',
         })
-        await ctx.reply('Документ успешно доставлен вам!')
+        
     } catch(e) {
         console.error(e);
     }
@@ -1248,9 +1249,9 @@ bot.action('b16', async (ctx) => {
         await ctx.reply(`‼ @${ctx.update.callback_query.from.username}, документ загружается, подождите немного...`)
         await ctx.answerCbQuery()
         await ctx.replyWithDocument({
-            source: './books/milliy_goya_9_rus.pdf',
+            source: './books/ИНН.pdf',
         })
-        await ctx.reply('Документ успешно доставлен вам!')
+        
     } catch(e) {
         console.error(e);
     }
@@ -1324,9 +1325,9 @@ bot.action('b17', async (ctx) => {
         await ctx.reply(`‼ @${ctx.update.callback_query.from.username}, документ загружается, подождите немного...`)
         await ctx.answerCbQuery()
         await ctx.replyWithDocument({
-            source: './books/ozbek_tili_9_rus.pdf',
+            source: './books/Узбекский_Язык.pdf',
         })
-        await ctx.reply('Документ успешно доставлен вам!')
+        
     } catch(e) {
         console.error(e);
     }
@@ -1399,9 +1400,9 @@ bot.action('b18', async (ctx) => {
         await ctx.reply(`‼ @${ctx.update.callback_query.from.username}, документ загружается, подождите немного...`)
         await ctx.answerCbQuery()
         await ctx.replyWithDocument({
-            source: './books/ozbekiston_tarixi_9_rus.pdf',
+            source: './books/История(Узбекистан).pdf',
         })
-        await ctx.reply('Документ успешно доставлен вам!')
+        
     } catch(e) {
         console.error(e);
     }
@@ -1474,9 +1475,9 @@ bot.action('b19', async (ctx) => {
         await ctx.reply(`‼ @${ctx.update.callback_query.from.username}, документ загружается, подождите немного...`)
         await ctx.answerCbQuery()
         await ctx.replyWithDocument({
-            source: './books/rus_tili_9_rus.pdf',
+            source: './books/Русский_Язык.pdf',
         })
-        await ctx.reply('Документ успешно доставлен вам!')
+        
     } catch(e) {
         console.error(e);
     }
@@ -1548,9 +1549,9 @@ bot.action('b20', async (ctx) => {
         await ctx.reply(`‼ @${ctx.update.callback_query.from.username}, документ загружается, подождите немного...`)
         await ctx.answerCbQuery()
         await ctx.replyWithDocument({
-            source: './books/www.idum.uz__texnologiya_9_rus.pdf',
+            source: './books/Технология.pdf',
         })
-        await ctx.reply('Успех!')
+        
     } catch(e) {
         console.error(e);
     }
