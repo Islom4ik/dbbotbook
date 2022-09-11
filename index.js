@@ -22,16 +22,25 @@ bot.use((ctx,next)=>{
     next()
 })
 
-bot.start((ctx) => ctx.reply('Бот скинет вам любые книги 9 класса чтобы не искать их 3 часа\nНапиши команду /books и я скину тебе список книг \nPowered by @geemNp'));
-bot.help((ctx) => ctx.reply('Команды бота: \n/start - запуск(перезапуск) бота \n/books - скинет список книг'));
+bot.start((ctx) => ctx.reply('Бот скинет вам любые книги 9 класса чтобы не искать их 3 часа\nНапиши команду /books и я скину тебе список книг \n/help - помощь по боту \nPowered by @geemNp', Markup.removeKeyboard()));
+bot.help(async (ctx) => {
+    let kb = [
+        ['/start'],
+        ['/books']
+    ] 
+    await ctx.reply('Команды бота: \n/start - перезапуск бота \n/books - список книг', Markup.keyboard(kb).resize())
+    
+});
+
 bot.launch(console.log('Бот готов к использованию...'));
 
 bot.command('books', async (ctx) => {
     try {
-        if (ctx.session?.booksRequest> (new Date().valueOf() - 5 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить список можно через 5 минут (@${ctx.message.from.username})`);
+        if (ctx.session?.booksRequest> (new Date().valueOf() - 5 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить список можно через 5 минут (@${ctx.message.from.username})`, Markup.removeKeyboard());
         ctx.session.booksRequest = new Date().valueOf();
 
-        await ctx.replyWithHTML('<b>1. Литература 1 часть \n2. Литература 2 часть \n3. Алгебра \n4. Геометрия \n5. Биология \n6. Черчение \n7. Физика \n8. Информатика(учебник) \n9. Информатика(методика) \n10. Воспитание \n11. Экономика \n12. География \n13. Всемирная История \n14. Химия \n15. ОКП(Основы Конституционного Права) \n16. ИНН(Идея Национальной Независимости) \n17. Узбекский Язык \n18. История Узбекистана \n19. Русский Язык \n20. Технология</b>', Markup.inlineKeyboard(
+        await ctx.reply('Список книг 9 классов rus (Uzbekistan)', Markup.removeKeyboard())
+        await ctx.replyWithHTML(`<b>1. Литература 1 часть \n2. Литература 2 часть \n3. Алгебра \n4. Геометрия \n5. Биология \n6. Черчение \n7. Физика \n8. Информатика(учебник) \n9. Информатика(методика) \n10. Воспитание \n11. Экономика \n12. География \n13. Всемирная История \n14. Химия \n15. ОКП(Основы Конституционного Права) \n16. ИНН(Идея Национальной Независимости) \n17. Узбекский Язык \n18. История Узбекистана \n19. Русский Язык \n20. Технология</b> \n- - - - - - - - - - - - - - - - - - - - - - \nЗапросил: @${ctx.message.from.username}`, Markup.inlineKeyboard(
             [
                 [Markup.button.callback('1', 'b1'), Markup.button.callback('2', 'b2'), Markup.button.callback('3', 'b3'), Markup.button.callback('4', 'b4'), Markup.button.callback('5', 'b5')],
                 [Markup.button.callback('6', 'b6'), Markup.button.callback('7', 'b7'), Markup.button.callback('8', 'b8'), Markup.button.callback('9', 'b9'), Markup.button.callback('10', 'b10')],
@@ -1184,7 +1193,7 @@ bot.action('b15', async (ctx) => {
 bot.action('b16', async (ctx) => {
     try {
         if (ctx.session?.b16Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
-        ctx.session.b4Request = new Date().valueOf();
+        ctx.session.b16Request = new Date().valueOf();
         /* main */
         if (ctx.session?.b1Request> (new Date().valueOf() - 2 * 60 * 1000)) return await ctx.reply(`⚠ Повторно запросить документ можно через 2 минут (@${ctx.update.callback_query.from.username})`);
         ctx.session.b1Request = new Date().valueOf();
